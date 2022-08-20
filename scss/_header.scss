@@ -35,19 +35,12 @@
     }
 }
 
-.menu {
-
-    &__body {
-        
-    }
+.menu {    
 
     &__list {
         display: flex;
         justify-content: space-between;
-    }
-
-    &__item {
-    }
+    }    
 
     &__link {
         font-style: normal;
@@ -55,5 +48,6 @@
         line-height: 26px;
         letter-spacing: 2px;
         color: #FFFFFF;
+        scroll-behavior: smooth;
     }
 }

@@ -106,6 +106,16 @@ body._lock {
   margin: 0 auto;
 }
 
+.title {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
 .header {
   padding: 59px 0;
   background: #030303;
@@ -148,4 +158,108 @@ body._lock {
   line-height: 26px;
   letter-spacing: 2px;
   color: #FFFFFF;
+  scroll-behavior: smooth;
+}
+
+.welcome {
+  background: #030303;
+  color: #fff;
+  padding-bottom: 60px;
+}
+.welcome__container {
+  position: relative;
+  background-image: url(../img/gradient.png), url(../img/slide1.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 96.6%;
+}
+.welcome__content {
+  padding-bottom: 272px;
+}
+
+.content-welcome {
+  display: flex;
+  flex-direction: column;
+}
+.content-welcome__title {
+  margin-top: 150px;
+}
+.content-welcome__subtitle {
+  margin: 25px 0 75px 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+}
+.content-welcome__link {
+  width: max-content;
+  color: #fff;
+  background: #710707;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  padding: 24.5px 64px;
+}
+
+.slider-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  padding: 40px 74px;
+  background: #030303;
+}
+.slider-welcome__squares {
+  display: flex;
+  margin: 0 60px 0 55px;
+}
+.slider-welcome__square {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+}
+.slider-welcome__square:not(:last-child) {
+  margin-right: 25px;
+}
+.slider-welcome__arrows {
+  display: flex;
+  align-items: center;
+}
+.counter {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+}
+.counter__current {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+}
+.counter__splitter {
+  margin: 0 5px;
+}
+.counter__total {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.active {
+  background: #D2B183;
+}
+
+.prev {
+  margin-right: 20px;
+}
+
+.next {
+  rotate: 180deg;
 }
