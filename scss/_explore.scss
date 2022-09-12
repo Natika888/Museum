@@ -1,0 +1,45 @@
+.explore {
+
+    &__container {
+        display: flex;
+    }
+
+    &__content {
+        margin-right: 61px;
+    }
+
+    &__title {
+        position: relative;
+        margin-bottom: 107px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 660px;
+            height: 3px;
+            left: 0px;
+            top: 115px;
+            background: #710707;
+        }
+    }
+
+    &__text {
+        margin-top: 25px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 38px;
+
+        span {
+            color: #CAAA7D;
+        }
+    }
+
+    &__image {
+        width: 720px;
+        height: 700px;
+        margin-top: 15px;
+    }
+}
+

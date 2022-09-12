@@ -1,8 +1,7 @@
 .welcome {
     
-    background: #030303;
-    color: #fff;
-    padding-bottom: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
 
     &__container {
         position: relative;
@@ -53,9 +52,9 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    right: 15px;
+    right: 0;
     bottom: 0;
-    padding: 40px 74px;
+    padding: 40px 89px 40px 74px;
     background: #030303;    
 
     &__squares {
@@ -63,15 +62,14 @@
         margin: 0 60px 0 55px;
     }
 
-    &__square {
+        &__square {
         width: 16px;
         height: 16px;
-        background-color: #fff;        
-        &:not(:last-child) {
-            margin-right: 25px;
+        background-color: #fff;
+        margin-right: 12.5px;
+        margin-left: 12.5px;
+    
         }
-        
-    }
 
     &__arrows {
         display: flex;    

@@ -12,6 +12,9 @@ $md1: $maxWidthContainer + 12;
 
 
 $mainColor: #000000;
+$titleWhiteColor: #fff;
+$titleOtherColor: #9D8665;
+
 
 
 //</ПЕРЕМЕННЫЕ>==========================================================================================
@@ -23,6 +26,10 @@ body {
 	&._lock {
 		overflow: hidden;
 	}
+}
+
+html {
+  scroll-behavior: smooth;
 }
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
@@ -49,8 +56,20 @@ body {
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
+  color: $titleWhiteColor;
+}
+
+.dark {
+  background: #030303;
+    color: #fff;
+    padding: 75px 0;
 }
 
 @import "header";
 @import "welcome";
 @import "footer";
+@import "visiting";
+@import "explore";
+@import "video";
+@import "contacts";
+@import "gallery";

@@ -93,6 +93,10 @@ body._lock {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -114,6 +118,13 @@ body._lock {
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
+  color: #fff;
+}
+
+.dark {
+  background: #030303;
+  color: #fff;
+  padding: 75px 0;
 }
 
 .header {
@@ -162,9 +173,8 @@ body._lock {
 }
 
 .welcome {
-  background: #030303;
-  color: #fff;
-  padding-bottom: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .welcome__container {
   position: relative;
@@ -209,9 +219,9 @@ body._lock {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  right: 15px;
+  right: 0;
   bottom: 0;
-  padding: 40px 74px;
+  padding: 40px 89px 40px 74px;
   background: #030303;
 }
 .slider-welcome__squares {
@@ -222,9 +232,8 @@ body._lock {
   width: 16px;
   height: 16px;
   background-color: #fff;
-}
-.slider-welcome__square:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 12.5px;
+  margin-left: 12.5px;
 }
 .slider-welcome__arrows {
   display: flex;
@@ -262,4 +271,146 @@ body._lock {
 
 .next {
   rotate: 180deg;
+}
+
+.visiting {
+  padding: 75px 0;
+}
+.visiting__title {
+  position: relative;
+  color: #9D8665;
+  margin-bottom: 103px;
+}
+.visiting__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #710707;
+  top: 114px;
+}
+.visiting__cards {
+  display: flex;
+  gap: 75px 60px;
+  flex-wrap: wrap;
+}
+.visiting__card {
+  display: block;
+}
+
+.card-visiting {
+  width: 30.55%;
+}
+.card-visiting__title {
+  position: relative;
+  color: #000000;
+  font-size: 32px;
+  line-height: 35px;
+  margin-top: 25px;
+  margin-bottom: 22px;
+}
+.card-visiting__title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 2px;
+  left: 0px;
+  top: 44px;
+  background: #710707;
+}
+.card-visiting__subtitle {
+  color: #000000;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.card-visiting__text {
+  color: #000000;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.explore__container {
+  display: flex;
+}
+.explore__content {
+  margin-right: 61px;
+}
+.explore__title {
+  position: relative;
+  margin-bottom: 107px;
+}
+.explore__title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 660px;
+  height: 3px;
+  left: 0px;
+  top: 115px;
+  background: #710707;
+}
+.explore__text {
+  margin-top: 25px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+}
+.explore__text span {
+  color: #CAAA7D;
+}
+.explore__image {
+  width: 720px;
+  height: 700px;
+  margin-top: 15px;
+}
+
+.contacts {
+  padding: 75px 0;
+}
+.contacts__title {
+  position: relative;
+  color: #9D8665;
+}
+.contacts__title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0px;
+  top: 115px;
+  background: #710707;
+}
+.contacts__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 103px;
+}
+.contacts__contacts {
+  width: 19.6%;
+}
+.contacts__contacts span {
+  display: block;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 25px;
+}
+.contacts__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 50px;
 }
