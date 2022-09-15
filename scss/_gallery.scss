@@ -1,9 +1,14 @@
 .gallery {
+    padding-bottom: 0;
 
     &__container {
+        height: 2125px;
+        overflow-y: hidden;
+        
     }
 
     &__title {
+        margin-bottom: 75px;
     }
 
     &__list {
@@ -11,8 +16,23 @@
 }
 
 .list-gallery {
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
 
-    &_item {
+    // display: grid;
+    // align-items: start;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // justify-self: auto;
+    // grid-template-rows: repeat(4, auto);
+    // gap: 24px 36px;
+    // column-count: 3;
+    //     column-width: 456px;
+        // gap: 24px 36px;
+        // column-gap: 24px;
+
+    &__item {
+        width: 456px;
     }
 
     &_image {
