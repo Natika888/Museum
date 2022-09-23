@@ -60,6 +60,30 @@ line-height: 38px;
 .slider-video {
 
     &__controls {
-        
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+}
+
+.controls {
+
+    &__stroke {
+        width: 10px;
+        height: 12px;
+            &.right {
+                rotate: 180deg;
+            }
+    }
+
+    &__dash {
+        width: 12px;
+height: 12px;
+border-radius: 50%;
+background: #999999;
+        &.active {
+            background: #333333;
+        }
     }
 }

@@ -165,7 +165,13 @@
                         <iframe loading="lazy" width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY" title="Promenade dans les collections mésopotamiennes avec Ariane Thomas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="slider-video__controls">
-                        
+                        <img src="img/Stroke.svg" alt="Stroke" class="controls__stroke left">
+                        <div class="controls__dash active"></div>
+                        <div class="controls__dash"></div>
+                        <div class="controls__dash"></div>
+                        <div class="controls__dash"></div>
+                        <div class="controls__dash"></div>
+                        <img src="img/Stroke.svg" alt="Stroke" class="controls__stroke right">
                     </div>
 
                 </div>
@@ -212,12 +218,53 @@
                             <img src="img/gallery/galery12.jpg" alt="Gallery image" class="list-gallery_image">
                         </picture>
                     </div>
+                    <div class="gallery__gradient"></div>
                 </div>
             </section>
 
             <section class="tickets" id="tickets">
                 <div class="tickets__container container">
-                    
+                    <h2 class="tickets__title title">BUY TICKETS</h2>
+                    <div class="tickets__content">
+                        <img src="img/ticketsImage.jpg" alt="Image" class="tickets__content-image">
+                        <div class="tickets__content-type">
+                            <h3 class="content-type__title">Ticket Type</h3>
+                            <div class="content__radio-btns">
+                                <input type="radio" class="tickets__input" name="type" value="Permanent exhibition" checked>
+                                <label for="type" class="tickets__input label">Permanent exhibition</label>
+                            </div>
+
+                            <div class="content__radio-btns">
+                                <input type="radio" class="tickets__input" name="type" value="Permanent exhibition">
+                                <label for="type" class="tickets__input label">Temporary exhibition</label>
+                            </div>
+
+                            <div class="content__radio-btns">
+                                <input type="radio" class="tickets__input"  name="type" value="Permanent exhibition">
+                                <label for="type" class="tickets__input label">Combined Admission</label>
+                            </div>
+                        </div>
+                        <div class="tickets__content-amount">
+                            <h3 class="content-amount__title">Amount</h3>
+                            <span class="content-amount__text">Basic 18+</span>
+                            <div class="content-amount__quantity quantity">
+                                <button type="button" class="quantity__btn quantity__btn_minus">-</button>
+                                <div class="quantity__input">
+                                    <input type="text" name="form[]" autocomplete="off" value="1">
+                                </div>
+                                <button type="button" class="quantity__btn quantity__btn_plus">+</button>
+                            </div>
+                            <span class="content-amount__text">Senior 65+</span>
+                            <div class="content-amount__quantity quantity">
+                                <button type="button" class="quantity__btn quantity__btn_minus">-</button>
+                                <div class="quantity__input">
+                                    <input type="text" name="form[]" autocomplete="off" value="1">
+                                </div>
+                                <button type="button" class="quantity__btn quantity__btn_plus">+</button>
+                            </div>
+                            <button class="content-amount__btn">Buy Now</button>
+                        </div>
+                    </div>
                 </div>
             </section>
 

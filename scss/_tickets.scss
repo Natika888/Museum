@@ -1,0 +1,132 @@
+.tickets {
+    padding: 75px 0;
+
+    &__input {
+        width: 17px;
+        height: 17px;
+        font-style: normal;
+        font-weight: 300;
+
+        line-height: 26px;
+        cursor: pointer;
+
+        
+    }
+
+    &__container {}
+
+    &__title {
+        position: relative;
+        color: $titleOtherColor;
+        margin-bottom: 103px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            left: 0px;
+            top: 115px;
+            background: #710707;
+        }
+    }
+
+    &__content {
+        display: flex;
+        gap: 60px;
+    }
+
+    &__content-image {
+        width: 50%;
+    }
+
+    &__content-type {
+        // display: flex;
+        // flex-direction: column;
+        width: 18.8%;
+    }
+
+    &__content-amount {
+        width: 12.15%;
+        margin-left: auto;
+        text-align: right;
+    }
+}
+
+.content-type {
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 50px;
+    }
+}
+
+.content-amount {
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    &__btn {
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+        background-color: $mainColor;
+        width: 175px;
+        height: 50px;
+    }
+
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px;
+        letter-spacing: 2px;
+    }
+
+    &__quantity {
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        height: 50px;
+        border: 3px solid #000000;
+    }
+
+
+}
+
+.quantity {
+
+    &__btn {
+
+        &_minus {}
+
+        &_plus {}
+    }
+
+    &__input {
+        width: 80%;
+        display: inline;
+        text-align: center;
+        
+    }
+}
+
+.content__radio-btns {
+    accent-color: $mainColor;
+    margin-top: 25px;
+    cursor: pointer;
+    & label {
+        margin-left: 23px;
+    }
+
+}
