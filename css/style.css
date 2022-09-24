@@ -127,6 +127,14 @@ html {
   padding: 75px 0;
 }
 
+.shown {
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+}
+
 .header {
   padding: 59px 0;
   background: #030303;
@@ -178,17 +186,31 @@ html {
 }
 .welcome__container {
   position: relative;
-  background-image: url(../img/gradient.png), url(../img/slide1.jpg);
-  background-repeat: no-repeat;
-  background-position-x: 96.6%;
+  display: flex;
 }
 .welcome__content {
   padding-bottom: 272px;
+  z-index: 10;
+}
+.welcome__carousel {
+  position: relative;
+  width: 50%;
+}
+.welcome__carousel-item {
+  width: 1000px;
+  position: absolute;
+  right: 0;
+}
+.welcome__carousel-gradient {
+  position: absolute;
+  right: 0;
+  z-index: 9;
 }
 
 .content-welcome {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 .content-welcome__title {
   margin-top: 150px;
@@ -603,10 +625,18 @@ html {
   border: 3px solid #000000;
 }
 
+.quantity__btn {
+  width: 50px;
+}
 .quantity__input {
   width: 80%;
   display: inline;
   text-align: center;
+}
+.quantity__input input {
+  width: 50px;
+  text-align: center;
+  line-height: 44px;
 }
 
 .content__radio-btns {

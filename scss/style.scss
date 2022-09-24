@@ -65,6 +65,15 @@ html {
     padding: 75px 0;
 }
 
+.shown {
+  visibility: visible;
+}
+
+.hidden {
+  // visibility: hidden;
+  display: none;
+}
+
 @import "header";
 @import "welcome";
 @import "footer";

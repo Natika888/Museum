@@ -107,6 +107,7 @@
 .quantity {
 
     &__btn {
+        width: 50px;
 
         &_minus {}
 
@@ -117,6 +118,11 @@
         width: 80%;
         display: inline;
         text-align: center;
+        & input {
+            width: 50px;
+            text-align: center;
+            line-height: 44px;
+        }
         
     }
 }
