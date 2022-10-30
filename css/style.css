@@ -198,6 +198,7 @@ html {
 }
 .welcome__carousel-item {
   width: 1000px;
+  height: 750px;
   position: absolute;
   right: 0;
 }
@@ -261,6 +262,10 @@ html {
   display: flex;
   align-items: center;
 }
+.slider-welcome__arrow {
+  cursor: pointer;
+}
+
 .counter {
   font-style: normal;
   font-weight: 400;
@@ -287,11 +292,11 @@ html {
   background: #D2B183;
 }
 
-.prev {
+.slider-welcome__arrow-prev {
   margin-right: 20px;
 }
 
-.next {
+.slider-welcome__arrow-next {
   rotate: 180deg;
 }
 
