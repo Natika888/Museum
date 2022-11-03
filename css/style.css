@@ -88,6 +88,7 @@ h6 {
 
 body {
   color: #000000;
+  overflow-x: hidden;
 }
 body._lock {
   overflow: hidden;
@@ -119,6 +120,11 @@ html {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 50px;
+  }
 }
 
 .dark {
@@ -202,10 +208,22 @@ html {
   position: absolute;
   right: 0;
 }
+@media screen and (max-width: 1024px) {
+  .welcome__carousel-item {
+    width: 700px;
+    height: 525px;
+  }
+}
 .welcome__carousel-gradient {
   position: absolute;
   right: 0;
   z-index: 9;
+}
+@media screen and (max-width: 1024px) {
+  .welcome__carousel-gradient {
+    width: 700px;
+    height: 525px;
+  }
 }
 
 .content-welcome {
@@ -224,6 +242,12 @@ html {
   line-height: 33px;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 1024px) {
+  .content-welcome__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .content-welcome__link {
   width: max-content;
   color: #fff;
@@ -235,6 +259,12 @@ html {
   line-height: 26px;
   letter-spacing: 2px;
   padding: 24.5px 64px;
+}
+@media screen and (max-width: 1024px) {
+  .content-welcome__link {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .slider-welcome {
@@ -319,8 +349,12 @@ html {
 }
 .visiting__cards {
   display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
   gap: 75px 60px;
   flex-wrap: wrap;
+  max-height: 1500px;
 }
 .visiting__card {
   display: block;
@@ -364,6 +398,9 @@ html {
   line-height: 21px;
 }
 
+.explore {
+  display: none;
+}
 .explore__container {
   display: flex;
 }
@@ -401,6 +438,7 @@ html {
 }
 
 .video {
+  display: none;
   padding: 75px 0;
 }
 .video__container {
@@ -477,6 +515,7 @@ html {
 }
 
 .contacts {
+  display: none;
   padding: 75px 0;
 }
 .contacts__title {
@@ -519,6 +558,7 @@ html {
 }
 
 .gallery {
+  display: none;
   padding-bottom: 0;
 }
 .gallery__container {
@@ -551,6 +591,7 @@ html {
 }
 
 .tickets {
+  display: none;
   padding: 75px 0;
 }
 .tickets__input {

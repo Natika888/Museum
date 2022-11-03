@@ -23,6 +23,7 @@ $titleOtherColor: #9D8665;
 @import "reset";
 body {
 	color: $mainColor;
+  overflow-x: hidden;
 	&._lock {
 		overflow: hidden;
 	}
@@ -57,6 +58,9 @@ html {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: $titleWhiteColor;
+  @media screen and (max-width:1024px) {
+    font-size: 50px;
+  }
 }
 
 .dark {
