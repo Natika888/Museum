@@ -36,7 +36,8 @@ html {
 
 .wrapper {
     width: 100%;
-    min-height: 100%;
+    max-height: 100%;
+    // max-height: 100vw;
       // overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -53,7 +54,8 @@ html {
   font-family: 'Forum';
   font-style: normal;
   font-weight: 400;
-  font-size: 80px;
+  // font-size: 80px;
+  font-size: calc(50px + 30*(100vw/1470));
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;

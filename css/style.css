@@ -100,7 +100,7 @@ html {
 
 .wrapper {
   width: 100%;
-  min-height: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -115,7 +115,7 @@ html {
   font-family: "Forum";
   font-style: normal;
   font-weight: 400;
-  font-size: 80px;
+  font-size: calc(50px + 2.0408163265vw);
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -199,12 +199,16 @@ html {
   z-index: 10;
 }
 .welcome__carousel {
-  position: relative;
-  width: 50%;
+  position: absolute;
+  right: 15px;
+  width: 52vw;
+  height: 39vw;
+  min-width: 700px;
+  min-height: 525px;
 }
 .welcome__carousel-item {
-  width: 1000px;
-  height: 750px;
+  max-width: 100%;
+  height: auto;
   position: absolute;
   right: 0;
 }
@@ -216,7 +220,7 @@ html {
 }
 .welcome__carousel-gradient {
   position: absolute;
-  right: 0;
+  left: 0;
   z-index: 9;
 }
 @media screen and (max-width: 1024px) {
@@ -273,7 +277,7 @@ html {
   align-items: center;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -60px;
   padding: 40px 89px 40px 74px;
   background: #030303;
 }
@@ -330,8 +334,13 @@ html {
   rotate: 180deg;
 }
 
+.footer {
+  display: none;
+}
+
 .visiting {
   padding: 75px 0;
+  display: none;
 }
 .visiting__title {
   position: relative;

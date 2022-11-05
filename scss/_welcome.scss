@@ -16,15 +16,20 @@
         z-index: 10;
     }
 
-    &__carousel {
-        position: relative;
-        width: 50%;
-        // overflow: hidden;
-        // position: absolute;
-        // right: 0;
+    &__carousel {        
+        position: absolute;
+        right: 15px;
+        // width: 68%;
+        width: 52vw;
+        height: 39vw;
+        min-width: 700px;
+        min-height: 525px;
+
         &-item {
-            width: 1000px;
-            height: 750px;
+            // display: flex;
+            // flex-grow: 1;
+            max-width: 100%;
+            height: auto;
             
             position: absolute;
             right: 0;
@@ -36,7 +41,7 @@
 
         &-gradient {
             position: absolute;
-            right: 0;
+            left: 0;
             z-index: 9;
             @media screen and (max-width:1024px) {
                 width: 700px;
@@ -94,9 +99,10 @@
     align-items: center;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -60px;
     padding: 40px 89px 40px 74px;
     background: #030303;    
+    // transform: translate(-50%, -50%);
 
     &__squares {
         display: flex;
